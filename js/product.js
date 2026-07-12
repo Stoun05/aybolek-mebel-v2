@@ -53,24 +53,16 @@ fetch("data/products.json")
     if (!product) return;
 
     const title = document.querySelector(".product-details h1");
-    const price = document.querySelector(".product-price");
     const description = document.querySelector(".product-description");
     const badge = document.querySelector(".product-badge");
-    const cartButton = document.querySelector(".detail-cart");
 
     if (title) title.textContent = product.title;
-    if (price) price.textContent = `${Number(product.price).toLocaleString("tk-TM")} TMT`;
     if (description) description.textContent = product.description;
     if (badge) badge.textContent = product.badge || "Premium";
     if (mainImage) {
       mainImage.src = product.image;
       mainImage.alt = product.title;
     }
-    if (cartButton) {
-      cartButton.dataset.name = product.title;
-      cartButton.dataset.price = product.price;
-    }
-
     document.title = `Aýbölek Mebel | ${product.title}`;
   })
   .catch(error => console.error(error));
