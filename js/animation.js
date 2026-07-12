@@ -86,59 +86,6 @@ window.addEventListener("scroll", () => {
 });
 
 // =======================
-// QUICK VIEW
-// =======================
-
-const quickModal = document.getElementById("quickModal");
-const quickClose = document.getElementById("quickClose");
-
-const quickImg = document.getElementById("quickImg");
-const quickTitle = document.getElementById("quickTitle");
-const quickDesc = document.getElementById("quickDesc");
-const quickPrice = document.getElementById("quickPrice");
-
-const quickButtons = document.querySelectorAll(".quick-view");
-
-quickButtons.forEach(button=>{
-
-    button.addEventListener("click",()=>{
-
-        const card = button.closest(".product-card");
-
-        quickImg.src = card.querySelector("img").src;
-        quickTitle.textContent = card.querySelector("h3").textContent;
-        quickDesc.textContent = card.querySelector("p").textContent;
-        quickPrice.textContent = card.querySelector("h2").textContent;
-
-        const quickCartBtn = quickModal.querySelector(".add-cart");
-        const productBtn = card.querySelector(".add-cart");
-
-        quickCartBtn.dataset.name = productBtn.dataset.name;
-        quickCartBtn.dataset.price = productBtn.dataset.price;
-
-        quickModal.classList.add("show");
-
-    });
-
-});
-
-quickClose.addEventListener("click",()=>{
-
-    quickModal.classList.remove("show");
-
-});
-
-quickModal.addEventListener("click",(e)=>{
-
-    if(e.target===quickModal){
-
-        quickModal.classList.remove("show");
-
-    }
-
-});
-
-// =======================
 // PRELOADER
 // =======================
 
