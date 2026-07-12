@@ -6,7 +6,7 @@
     "image": "images/products/sofa.png",
     "category": "living",
     "categoryLabel": "Myhman otagy",
-    "badge": "Bestseller"
+    "badge": "Myhman otagy"
   },
   {
     "id": "bed",
@@ -15,7 +15,7 @@
     "image": "images/products/bed.png",
     "category": "bedroom",
     "categoryLabel": "Ýatylýan otag",
-    "badge": "Täze"
+    "badge": "Ýatylýan otag"
   },
   {
     "id": "kitchen",
@@ -24,6 +24,6 @@
     "image": "images/products/kitchen 0.2.png",
     "category": "kitchen",
     "categoryLabel": "Aşhana",
-    "badge": "Premium"
+    "badge": "Aşhana"
   }
 ]
