@@ -2,6 +2,10 @@ const categoryCheckboxes = document.querySelectorAll(".filter-group input[type='
 const searchInput = document.getElementById("catalogSearch");
 const grid = document.getElementById("catalogGrid");
 const emptyMessage = document.getElementById("catalogEmpty");
+const countElement = document.getElementById("catalogCount");
+const clearFilters = document.getElementById("clearFilters");
+const filterToggle = document.getElementById("filterToggle");
+const filterPanel = document.getElementById("filterPanel");
 let products = [];
 
 function escapeHtml(value) {
@@ -36,7 +40,7 @@ function renderCatalog() {
   const categories = selectedCategories();
 
   const visible = products.filter(product => {
-    const text = `${product.title} ${product.description}`.toLowerCase();
+    const text = `${product.title} ${product.description} ${product.categoryLabel} ${product.badge}`.toLowerCase();
     const matchesSearch = text.includes(query);
     const matchesCategory = categories.length === 0 || categories.includes(product.category);
     return matchesSearch && matchesCategory;
@@ -44,6 +48,12 @@ function renderCatalog() {
 
   grid.innerHTML = visible.map(productCard).join("");
   emptyMessage.hidden = visible.length !== 0;
+  countElement.textContent = `${visible.length} önüm`;
+
+  const url = new URL(window.location.href);
+  if (categories.length === 1) url.searchParams.set("category", categories[0]);
+  else url.searchParams.delete("category");
+  window.history.replaceState({}, "", url);
 }
 
 function applyCategoryFromUrl() {
@@ -55,6 +65,18 @@ function applyCategoryFromUrl() {
 
 searchInput?.addEventListener("input", renderCatalog);
 categoryCheckboxes.forEach(checkbox => checkbox.addEventListener("change", renderCatalog));
+
+clearFilters?.addEventListener("click", () => {
+  categoryCheckboxes.forEach(checkbox => { checkbox.checked = false; });
+  if (searchInput) searchInput.value = "";
+  renderCatalog();
+});
+
+filterToggle?.addEventListener("click", () => {
+  const isOpen = filterPanel.classList.toggle("show-mobile");
+  filterToggle.setAttribute("aria-expanded", String(isOpen));
+  filterToggle.textContent = isOpen ? "× Filterleri ýap" : "☰ Filterleri aç";
+});
 
 fetch("data/products.json")
   .then(response => {
