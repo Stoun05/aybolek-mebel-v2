@@ -244,3 +244,68 @@
 .no-products p{
   color:#666;
 }
+
+.filter-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:24px;
+}
+
+.filter-heading h3{
+  margin:0;
+}
+
+.filter-heading button{
+  color:#2f9c95;
+  background:transparent;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.filter-toggle{
+  display:none;
+  width:100%;
+  padding:14px 18px;
+  border-radius:14px;
+  background:#2f9c95;
+  color:white;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+#catalogCount{
+  align-self:center;
+  color:#666;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.catalog-card[hidden]{
+  display:none;
+}
+
+@media (max-width:900px){
+  .catalog-page{
+    display:block;
+  }
+
+  .filter-toggle{
+    display:block;
+  }
+
+  .filter-panel{
+    display:none;
+    position:static;
+    margin-bottom:24px;
+  }
+
+  .filter-panel.show-mobile{
+    display:block;
+  }
+
+  .catalog-toolbar{
+    flex-wrap:wrap;
+  }
+}
