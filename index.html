@@ -38,10 +38,7 @@
 </nav>
 
   <div class="header-actions">
-    <button class="icon-btn">🔍</button>
-    <button class="icon-btn">♡</button>
-    <button class="icon-btn cart-btn"><span>🛒</span><span class="cart-count">0</span></button>
-    <button class="icon-btn">👤</button>
+    <button class="icon-btn" aria-label="Gözleg">🔍</button>
     <button class="menu-btn" id="menuBtn">☰</button>
   </div>
 
@@ -177,15 +174,9 @@
             </div>
 
             <div class="price-row">
-                <h2>12 500 TMT</h2>
-                <button class="add-cart" data-name="Premium Divan Luna" data-price="12500">Sebede goş</button>
+                <a class="add-cart" href="product.html?product=sofa">Giňişleýin</a>
             </div>
 
-            <div class="product-actions">
-                <button>♡</button>
-                <button class="quick-view">👁</button>
-                <button>🛒</button>
-            </div>
 
         </div>
 
@@ -213,15 +204,9 @@
             </div>
 
             <div class="price-row">
-                <h2>18 900 TMT</h2>
-                <button class="add-cart" data-name="Premium Ýatak" data-price="18900">Sebede goş</button>
+                <a class="add-cart" href="product.html?product=bed">Giňişleýin</a>
             </div>
             
-            <div class="product-actions">
-                <button>♡</button>
-                <button class="quick-view">👁</button>
-                <button>🛒</button>
-            </div>
 
         </div>
 
@@ -249,15 +234,9 @@
             </div>
 
             <div class="price-row">
-                <h2>22 000 TMT</h2>
-                <button class="add-cart" data-name="Modern Aşhana" data-price="22000">Sebede goş</button>
+                <a class="add-cart" href="product.html?product=kitchen">Giňişleýin</a>
             </div>
 
-            <div class="product-actions">
-                <button>♡</button>
-                <button class="quick-view">👁</button>
-                <button>🛒</button>
-            </div>
 
           </div>
 
@@ -272,55 +251,6 @@
     <p>Premium furniture & decoration</p>
     <p>© 2026 Aýbölek Mebel. Ähli hukuklar goralan.</p>
   </footer>
-
-  <div class="cart-drawer" id="cartDrawer">
-  <div class="cart-drawer-header">
-    <h2>Sebet</h2>
-    <button id="closeCart">×</button>
-  </div>
-
-  <div class="cart-items" id="cartItems">
-    <p class="empty-cart">Sebet boş</p>
-  </div>
-
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>Jemi:</span>
-      <strong id="cartTotal">0 TMT</strong>
-    </div>
-    <button class="checkout-btn" id="checkoutBtn">Sargyt etmek</button>
-  </div>
-</div>
-
-<div class="cart-overlay" id="cartOverlay"></div>
-
-<div class="checkout-modal" id="checkoutModal">
-  <div class="checkout-box">
-    <button class="close-checkout" id="closeCheckout">×</button>
-    <h2>Sargyt maglumatlary</h2>
-
-    <input type="text" placeholder="Adyňyz">
-    <input type="tel" placeholder="Telefon belgiňiz">
-    <textarea placeholder="Eltip bermeli salgy"></textarea>
-
-    <button class="send-order">Sargydy ugrat</button>
-  </div>
-</div>
-
-<div class="quick-modal" id="quickModal">
-  <div class="quick-box">
-    <button class="quick-close" id="quickClose">×</button>
-
-    <img id="quickImg" src="" alt="">
-
-    <div class="quick-info">
-      <h2 id="quickTitle">Product name</h2>
-      <p id="quickDesc">Product description</p>
-      <h3 id="quickPrice">0 TMT</h3>
-      <button class="add-cart">Sebede goş</button>
-    </div>
-  </div>
-</div>
 
 <div class="image-lightbox" id="imageLightbox">
   <button class="lightbox-close" id="lightboxClose">×</button>
