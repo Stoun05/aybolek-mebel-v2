@@ -72,6 +72,31 @@
             <input type="checkbox" value="kitchen">
             Aşhana
           </label>
+
+          <label>
+            <input type="checkbox" value="office">
+            Ofis mebelleri
+          </label>
+
+          <label>
+            <input type="checkbox" value="kids">
+            Çagalar otagy
+          </label>
+
+          <label>
+            <input type="checkbox" value="tables">
+            Stol we oturgyçlar
+          </label>
+
+          <label>
+            <input type="checkbox" value="wardrobes">
+            Şkaflar
+          </label>
+
+          <label>
+            <input type="checkbox" value="custom">
+            Ýörite sargyt
+          </label>
         </div>
 
       </aside>
@@ -83,61 +108,16 @@
 
         </div>
 
-        <div class="catalog-grid" id="catalogGrid">
-          <div class="catalog-card" data-category="living">
-            <img src="images/products/sofa.png" alt="Premium Divan Luna">
-            <div class="catalog-info">
-              <span>Bestseller</span>
-              <h3>Premium Divan Luna</h3>
-              <p>Myhman otagy üçin döwrebap divan.</p>
-              <div class="catalog-bottom">
-                <a class="catalog-btn" href="product.html?product=sofa">Giňişleýin</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="catalog-card" data-category="bedroom">
-            <img src="images/products/bed.png" alt="Premium Ýatak">
-            <div class="catalog-info">
-              <span>Täze</span>
-              <h3>Premium Ýatak</h3>
-              <p>Ýatylýan otag üçin premium toplum.</p>
-              <div class="catalog-bottom">
-                <a class="catalog-btn" href="product.html?product=bed">Giňişleýin</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="catalog-card" data-category="kitchen">
-            <img src="images/products/kitchen 0.2.png" alt="Modern Aşhana">
-            <div class="catalog-info">
-              <span>Premium</span>
-              <h3>Modern Aşhana</h3>
-              <p>Döwrebap aşhana mebel toplumy.</p>
-              <div class="catalog-bottom">
-                <a class="catalog-btn" href="product.html?product=kitchen">Giňişleýin</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="catalog-grid" id="catalogGrid" aria-live="polite"></div>
+        <p id="catalogEmpty" hidden style="padding:40px 0;text-align:center">
+          Bu kategoriýada entek önüm ýok. Täze mebeller ýakyn wagtda goşular.
+        </p>
 
       </div>
 
     </section>
 
   </main>
-
-  <div class="pagination">
-
-    <button class="page-btn active">1</button>
-
-    <button class="page-btn">2</button>
-
-    <button class="page-btn">3</button>
-
-    <button class="page-btn">→</button>
-
-    </div>
 
   <script src="js/app.js"></script>
   <script src="js/catalog.js"></script>
