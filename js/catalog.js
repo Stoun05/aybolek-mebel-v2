@@ -57,7 +57,10 @@ function renderCatalog() {
 }
 
 function applyCategoryFromUrl() {
-  const category = new URLSearchParams(window.location.search).get("category");
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  const query = params.get("q");
+  if (query && searchInput) searchInput.value = query;
   if (!category) return;
   const checkbox = [...categoryCheckboxes].find(item => item.value === category);
   if (checkbox) checkbox.checked = true;
