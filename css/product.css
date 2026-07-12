@@ -85,6 +85,12 @@
   font-size:15px;
 }
 
+.product-category{
+  color:#2f9c95;
+  font-weight:800;
+  margin:-6px 0 20px;
+}
+
 .product-description{
   font-size:18px;
   color:#666;
