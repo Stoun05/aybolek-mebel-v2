@@ -31,6 +31,7 @@ const navbar = document.getElementById("navbar");
 
 if (menuBtn && navbar) {
   menuBtn.setAttribute("aria-label", "Menýuny aç");
+  menuBtn.setAttribute("aria-expanded", "false");
   menuBtn.addEventListener("click", () => {
     const isOpen = navbar.classList.toggle("show");
     menuBtn.textContent = isOpen ? "×" : "☰";
