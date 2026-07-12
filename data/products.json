@@ -5,6 +5,7 @@
     "description": "Döwrebap myhman otagy üçin premium divan.",
     "image": "images/products/sofa.png",
     "category": "living",
+    "categoryLabel": "Myhman otagy",
     "badge": "Bestseller"
   },
   {
@@ -13,6 +14,7 @@
     "description": "Ýatylýan otag üçin döwrebap toplum.",
     "image": "images/products/bed.png",
     "category": "bedroom",
+    "categoryLabel": "Ýatylýan otag",
     "badge": "Täze"
   },
   {
@@ -21,6 +23,7 @@
     "description": "Premium aşhana mebel toplumy.",
     "image": "images/products/kitchen 0.2.png",
     "category": "kitchen",
+    "categoryLabel": "Aşhana",
     "badge": "Premium"
   }
 ]
