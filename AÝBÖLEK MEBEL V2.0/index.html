@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aýbölek Mebel</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+
+<div class="loader" id="loader">
+  <div class="loader-content">
+    <h2>AÝBÖLEK</h2>
+    <p>Premium Furniture</p>
+    <div class="loader-line">
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header">
+  <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="Aýbölek Mebel">
+  </a>
+
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="active">Baş sahypa</a>
+    <a href="katalog.html">Katalog</a>
+    <a href="about.html">Biz barada</a>
+    <a href="contact.html">Habarlaşmak</a>
+</nav>
+
+  <div class="header-actions">
+    <button class="icon-btn">🔍</button>
+    <button class="icon-btn">♡</button>
+    <button class="icon-btn cart-btn"><span>🛒</span><span class="cart-count">0</span></button>
+    <button class="icon-btn">👤</button>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Mebel gözle..."
+        >
+
+        <button id="closeSearch">✕</button>
+
+    </div>
+    
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-badge">Premium Furniture Collection 2026</span>
+
+        <h1>
+          Öýüňize rahatlyk we gözellik getirýäris.
+        </h1>
+
+        <p>
+          Aýbölek Mebel — döwrebap dizaýn, premium hil we ynamdar hyzmat bilen öýüňizi täze derejä çykarýan mebel brendi.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="katalog.html" class="btn btn-primary">Kataloga geç</a>
+          <a href="about.html" class="btn btn-outline">Biz barada</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <h3>500+</h3>
+                <p>Müşderi</p>
+            </div>
+
+            <div class="hero-stat">
+                <h3>250+</h3>
+                <p>Mebel modeli</p>
+            </div>
+
+            <div class="hero-stat">
+                <h3>12</h3>
+                <p>Kategoriýa</p>
+            </div>
+
+            <div class="hero-stat">
+                <h3>5 ýyl</h3>
+                <p>Tejribe</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+
+    <div class="section-header">
+        <span class="section-subtitle">KATEGORIÝALAR</span>
+        <h2>Öýüňiz üçin saýlanan kolleksiýalar</h2>
+        <p>Her otag üçin premium mebel çözgütleri.</p>
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="images/categories/bedroom.png" alt="">
+            <div class="overlay">
+                <h3>Ýatylýan otag</h3>
+                <span>32 önüm</span>
+                <div class="category-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="images/categories/living.png" alt="">
+            <div class="overlay">
+                <h3>Myhman otagy</h3>
+                <span>58 önüm</span>
+                <div class="category-arrow">→</div>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="images/categories/kitchen.png" alt="">
+            <div class="overlay">
+                <h3>Aşhana</h3>
+                <span>41 önüm</span>
+                <div class="category-arrow">→</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products section-padding" id="products">
+    <div class="section-title">
+        <span>Bestseller</span>
+        <h2>Iň köp saýlanan mebeller</h2>
+        <p>Müşderilerimiziň iň köp halaýan premium harytlary.</p>
+    </div>
+
+    <div class="product-grid">
+
+        
+    <!-- Product 1 -->
+    <div class="product-card">
+
+        <img src="images/products/sofa.png" alt="Premium Divan Luna">
+
+        <div class="product-info">
+
+            <div class="product-top">
+                <span class="badge">Bestseller</span>
+                <button class="heart">♡</button>
+            </div>
+
+            <h3>Premium Divan Luna</h3>
+
+            <p>Döwrebap myhman otagy üçin premium divan.</p>
+
+            <div class="rating">
+                ★★★★★
+                <span>(124)</span>
+            </div>
+
+            <div class="price-row">
+                <h2>12 500 TMT</h2>
+                <button class="add-cart" data-name="Premium Divan Luna" data-price="12500">Sebede goş</button>
+            </div>
+
+            <div class="product-actions">
+                <button>♡</button>
+                <button class="quick-view">👁</button>
+                <button>🛒</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+
+        <img src="images/products/bed.png" alt="Premium Ýatak">
+
+        <div class="product-info">
+
+            <div class="product-top">
+                <span class="badge">Täze</span>
+                <button class="heart" >♡</button>
+            </div>
+
+            <h3>Premium Ýatak</h3>
+
+            <p>Ýatylýan otag üçin döwrebap toplum.</p>
+
+            <div class="rating">
+                ★★★★★
+                <span>(86)</span>
+            </div>
+
+            <div class="price-row">
+                <h2>18 900 TMT</h2>
+                <button class="add-cart" data-name="Premium Ýatak" data-price="18900">Sebede goş</button>
+            </div>
+            
+            <div class="product-actions">
+                <button>♡</button>
+                <button class="quick-view">👁</button>
+                <button>🛒</button>
+            </div>
+
+        </div>
+
+    </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+
+        <img src="images/products/kitchen 0.2.png" alt="Modern Aşhana">
+
+          <div class="product-info">
+
+            <div class="product-top">
+                <span class="badge">Premium</span>
+                <button class="heart">♡</button>
+            </div>
+
+            <h3>Modern Aşhana</h3>
+
+            <p>Premium aşhana mebel toplumy.</p>
+
+            <div class="rating">
+                ★★★★★
+                <span>(65)</span>
+            </div>
+
+            <div class="price-row">
+                <h2>22 000 TMT</h2>
+                <button class="add-cart" data-name="Modern Aşhana" data-price="22000">Sebede goş</button>
+            </div>
+
+            <div class="product-actions">
+                <button>♡</button>
+                <button class="quick-view">👁</button>
+                <button>🛒</button>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <h2>AÝBÖLEK</h2>
+    <p>Premium furniture & decoration</p>
+    <p>© 2026 Aýbölek Mebel. Ähli hukuklar goralan.</p>
+  </footer>
+
+  <div class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-header">
+    <h2>Sebet</h2>
+    <button id="closeCart">×</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <p class="empty-cart">Sebet boş</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Jemi:</span>
+      <strong id="cartTotal">0 TMT</strong>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn">Sargyt etmek</button>
+  </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="checkout-modal" id="checkoutModal">
+  <div class="checkout-box">
+    <button class="close-checkout" id="closeCheckout">×</button>
+    <h2>Sargyt maglumatlary</h2>
+
+    <input type="text" placeholder="Adyňyz">
+    <input type="tel" placeholder="Telefon belgiňiz">
+    <textarea placeholder="Eltip bermeli salgy"></textarea>
+
+    <button class="send-order">Sargydy ugrat</button>
+  </div>
+</div>
+
+<div class="quick-modal" id="quickModal">
+  <div class="quick-box">
+    <button class="quick-close" id="quickClose">×</button>
+
+    <img id="quickImg" src="" alt="">
+
+    <div class="quick-info">
+      <h2 id="quickTitle">Product name</h2>
+      <p id="quickDesc">Product description</p>
+      <h3 id="quickPrice">0 TMT</h3>
+      <button class="add-cart">Sebede goş</button>
+    </div>
+  </div>
+</div>
+
+<div class="image-lightbox" id="imageLightbox">
+  <button class="lightbox-close" id="lightboxClose">×</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<div class="toast" id="toast">
+  <span id="toastText">Habar</span>
+</div>
+
+  <script src="js/app.js"></script>
+  <script src="js/animation.js"></script>
+
+</body>
+</html>
