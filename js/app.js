@@ -49,13 +49,13 @@ if (menuBtn && navbar) {
 const searchBtn = document.querySelector(".header-actions .icon-btn");
 const searchOverlay = document.getElementById("searchOverlay");
 const closeSearch = document.getElementById("closeSearch");
-const searchInput = document.getElementById("searchInput");
+const headerSearchInput = document.getElementById("searchInput");
 
 if (searchBtn && searchOverlay) {
   searchBtn.setAttribute("aria-label", "Gözleg aç");
   searchBtn.addEventListener("click", () => {
     searchOverlay.classList.add("active");
-    searchInput?.focus();
+    headerSearchInput?.focus();
   });
 
   closeSearch?.addEventListener("click", () => {
@@ -68,6 +68,14 @@ if (searchBtn && searchOverlay) {
     }
   });
 }
+
+headerSearchInput?.addEventListener("keydown", event => {
+  if (event.key !== "Enter") return;
+  const query = headerSearchInput.value.trim();
+  window.location.href = query
+    ? `katalog.html?q=${encodeURIComponent(query)}`
+    : "katalog.html";
+});
 
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") {
