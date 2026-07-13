@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aýbölek mebel dükany bilen habarlaşyň: telefonlar, salgy, iş wagty, Instagram we önüm boýunça sorag taýýarlamak.">
   <title>Aýbölek Mebel | Habarlaşmak</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="preload" as="image" href="images/hero/reception.webp" fetchpriority="high">
 </head>
 <body>
   <header class="site-header">
@@ -19,20 +22,140 @@
     </nav>
     <div class="header-actions"><button class="menu-btn" id="menuBtn">☰</button></div>
   </header>
+
   <main>
-    <section class="catalog-hero">
-      <div><span>HABARLAŞMAK</span><h1>Islän mebeliňiz barada soraň</h1><p>Önümiň adyny ýa-da suratyny görkeziň, size giňişleýin maglumat bereris.</p></div>
-    </section>
-    <section class="section-padding" style="max-width:900px;margin:auto;text-align:center">
-      <div class="section-title"><span>ARAGATNAŞYK</span><h2>Biz bilen habarlaşyň</h2><p>Resmi telefon belgisi, WhatsApp, Instagram, salgy we iş wagty şu ýerde ýerleşdiriler.</p></div>
-      <div id="selectedProduct" hidden style="margin:28px auto 0;padding:20px 24px;max-width:600px;background:#f3faf9;border-radius:18px">
-        <strong>Saýlanan önüm:</strong>
-        <span id="selectedProductName"></span>
+    <section class="catalog-hero contact-hero">
+      <div class="contact-hero-content">
+        <span>HABARLAŞMAK</span>
+        <h1>Soragyňyzy diňlemäge taýýar</h1>
+        <p>Önümiň görnüşi, ölçegi we elýeterliligi barada anyk maglumat almak üçin bize jaň ediň ýa-da sorag tekstini taýýarlaň.</p>
+        <a class="btn btn-primary" href="tel:+99312470103">Häzir jaň et</a>
       </div>
-      <p style="margin-top:24px">Hakyky aragatnaşyk maglumatlary taýýar bolanda bu bölümi täzeläris.</p>
+    </section>
+
+    <section class="contact-page">
+      <div class="contact-heading">
+        <span class="contact-eyebrow">ARAGATNAŞYK</span>
+        <h2>Özüňize amatly usuly saýlaň</h2>
+        <p>Dükan bilen göni habarlaşyň, salgyny kartada açyň ýa-da önüm boýunça taýýar sorag dörediň.</p>
+      </div>
+
+      <div class="contact-actions">
+        <a class="contact-action-card" href="tel:+99312470103">
+          <span class="action-number">01</span>
+          <div><h3>Telefon arkaly</h3><p>+993 12 47-01-03</p></div>
+          <b>→</b>
+        </a>
+        <a class="contact-action-card" href="https://www.instagram.com/aybolek_mebel_officiall/" target="_blank" rel="noopener noreferrer">
+          <span class="action-number">02</span>
+          <div><h3>Instagramda</h3><p>@aybolek_mebel_officiall</p></div>
+          <b>↗</b>
+        </a>
+        <a class="contact-action-card" href="https://www.google.com/maps/search/?api=1&amp;query=Parahat+4%2C+Andalyp+k%C3%B6%C3%A7esi+80%2FB%2C+A%C5%9Fgabat" target="_blank" rel="noopener noreferrer">
+          <span class="action-number">03</span>
+          <div><h3>Kartada tapyň</h3><p>Andalyp köçesi, 80/B</p></div>
+          <b>↗</b>
+        </a>
+      </div>
+
+      <div class="contact-layout">
+        <aside class="contact-information">
+          <span class="contact-eyebrow light">DÜKAN MAGLUMATLARY</span>
+          <h2>Aýbölek mebel dükany</h2>
+          <p class="contact-information-intro">Baha, ölçeg, reňk we häzirki elýeterlilik barada işgärlerimizden anyk maglumat soraň.</p>
+
+          <div class="contact-info-block">
+            <span>TELEFONLAR</span>
+            <div class="contact-phone-list">
+              <a href="tel:+99312470103">+993 12 47-01-03</a>
+              <a href="tel:+99312470104">+993 12 47-01-04</a>
+              <a href="tel:+99312470105">+993 12 47-01-05</a>
+              <a href="tel:+99312470106">+993 12 47-01-06</a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <span>SALGY</span>
+            <strong>Parahat 4, Andalyp köçesi, 80/B</strong>
+            <p>Öňki «Santa Barbara», Aşgabat</p>
+          </div>
+
+          <div class="contact-info-block">
+            <span>IŞ WAGTY</span>
+            <div class="working-row"><strong>Duşenbe–Anna</strong><b>09:00–19:00</b></div>
+            <div class="working-row"><strong>Şenbe–Ýekşenbe</strong><b>09:00–18:00</b></div>
+          </div>
+
+          <p class="contact-source-note">Iş wagty we goşmaça telefonlar açyk işewürlik katalogyndaky maglumatlara esaslanýar. Gitmezden öň jaň edip tassyklamak maslahat berilýär.</p>
+        </aside>
+
+        <section class="inquiry-panel" aria-labelledby="inquiry-title">
+          <div class="inquiry-heading">
+            <span class="contact-eyebrow">ÖNÜM BARADA SORAG</span>
+            <h2 id="inquiry-title">Sorag tekstini taýýarlaň</h2>
+            <p>Maglumatlaryňyzy giriziň. Sahypa size Instagramda ýa-da telefon arkaly ulanyp boljak taýýar tekst döreder.</p>
+          </div>
+
+          <div class="selected-product" id="selectedProduct" hidden>
+            <img id="selectedProductImage" src="images/logo.png" alt="">
+            <div><span>SAÝLANAN ÖNÜM</span><strong id="selectedProductName"></strong></div>
+            <button type="button" id="clearSelectedProduct" aria-label="Saýlanan önümi aýyr">×</button>
+          </div>
+
+          <form class="inquiry-form" id="inquiryForm">
+            <div class="form-row">
+              <label>Adyňyz
+                <input type="text" id="customerName" autocomplete="name" placeholder="Adyňyzy ýazyň" required>
+              </label>
+              <label>Telefon belgiňiz
+                <input type="tel" id="customerPhone" autocomplete="tel" placeholder="+993 6..." required>
+              </label>
+            </div>
+
+            <label>Mebel kategoriýasy
+              <select id="customerCategory" required>
+                <option value="">Kategoriýany saýlaň</option>
+                <option>Ýumşak mebeller</option>
+                <option>Ofis mebelleri</option>
+                <option>Ýatylýan otag mebelleri</option>
+                <option>Naharhana mebelleri</option>
+                <option>Mekdep harytlary</option>
+                <option>Başga önüm</option>
+              </select>
+            </label>
+
+            <label>Soragyňyz
+              <textarea id="customerMessage" rows="5" placeholder="Mysal: Ölçegi, reňkleri we elýeterliligi barada maglumat almak isleýärin." required></textarea>
+            </label>
+
+            <label class="consent-row">
+              <input type="checkbox" id="customerConsent" required>
+              <span>Girizen maglumatlarymyň diňe sorag tekstini taýýarlamak üçin ulanylýandygyna düşünýärin.</span>
+            </label>
+
+            <button class="inquiry-submit" type="submit">Teksti taýýarla we göçür <span>→</span></button>
+            <p class="form-help">Bu forma maglumatlary serwere ibermeýär we hiç ýerde saklamaýar.</p>
+          </form>
+
+          <div class="message-result" id="messageResult" hidden>
+            <div class="message-result-head"><strong>Taýýar sorag teksti</strong><span id="copyStatus" role="status" aria-live="polite"></span></div>
+            <pre id="messagePreview"></pre>
+            <div class="message-result-actions">
+              <button type="button" id="copyMessage">Gaýtadan göçür</button>
+              <a href="https://www.instagram.com/aybolek_mebel_officiall/" target="_blank" rel="noopener noreferrer">Instagramy aç ↗</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="contact-reminder">
+        <div><span>JAŇ EDENIŇIZDE</span><h2>Önümiň adyny aýtmagy unutmaň</h2><p>Önümiň adyny ýa-da suratyny görkezseňiz, işgärler size has çalt maglumat berip biler.</p></div>
+        <a class="btn contact-catalog-btn" href="katalog.html">Kataloga geç</a>
+      </section>
     </section>
   </main>
-  <footer class="footer"><h2>AÝBÖLEK</h2><p>Premium furniture & decoration</p><p>© 2026 Aýbölek Mebel. Ähli hukuklar goralan.</p></footer>
+
+  <footer class="footer"><h2>AÝBÖLEK</h2><p>Furniture &amp; decoration</p><p>© 2026 Aýbölek Mebel. Ähli hukuklar goralan.</p></footer>
   <script src="js/app.js"></script>
   <script src="js/contact.js"></script>
 </body>
