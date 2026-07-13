@@ -109,8 +109,20 @@
 
 @media (max-width:680px){
   .hero{
-    min-height:auto;
-    padding:130px 5% 70px;
+    min-height:100svh;
+    padding:130px 7% 92px;
+  }
+
+  .hero::after{
+    background:linear-gradient(to top, rgba(5,20,26,.9) 0%, rgba(5,20,26,.55) 58%, rgba(5,20,26,.28) 100%);
+  }
+
+  .hero-slide{
+    object-position:center center;
+  }
+
+  .hero-slide:nth-child(3){
+    object-position:center 35%;
   }
 
   .hero h1{
@@ -131,6 +143,32 @@
 
   .hero-buttons .btn{
     width:100%;
+  }
+
+  .hero-arrow{
+    top:auto;
+    bottom:24px;
+    width:42px;
+    height:42px;
+    font-size:31px;
+    transform:none;
+  }
+
+  .hero-arrow:hover,
+  .hero-arrow:focus-visible{
+    transform:scale(1.05);
+  }
+
+  .hero-prev{
+    left:5%;
+  }
+
+  .hero-next{
+    right:5%;
+  }
+
+  .hero-dots{
+    bottom:40px;
   }
 
   .section-padding,

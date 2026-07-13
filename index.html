@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="preload" as="image" href="images/hero/store-wide.webp" fetchpriority="high" />
 </head>
 
 <body>
@@ -61,7 +62,14 @@
 
   <main>
 
-    <section class="hero" id="home">
+    <section class="hero hero-slider" id="home" aria-roledescription="carousel" aria-label="Aýbölek mebel dükany">
+      <div class="hero-slides">
+        <img class="hero-slide active" src="images/hero/store-wide.webp" alt="Aýbölek mebel dükanynyň daşky görnüşi" fetchpriority="high">
+        <img class="hero-slide" src="images/hero/store-entrance.webp" alt="Aýbölek mebel dükanynyň esasy girelgesi">
+        <img class="hero-slide" src="images/hero/store-sign.webp" alt="Aýbölek mebel dükanynyň ýazgysy">
+        <img class="hero-slide" src="images/hero/reception.webp" alt="Aýbölek mebel dükanynyň kabulhanasy">
+      </div>
+
       <div class="hero-content">
         <span class="hero-badge">AÝBÖLEK MEBEL KATALOGY</span>
 
@@ -77,6 +85,16 @@
           <a href="katalog.html" class="btn btn-primary">Kataloga geç</a>
           <a href="about.html" class="btn btn-outline">Biz barada</a>
         </div>
+      </div>
+
+      <button class="hero-arrow hero-prev" type="button" aria-label="Öňki suraty görkez">‹</button>
+      <button class="hero-arrow hero-next" type="button" aria-label="Indiki suraty görkez">›</button>
+
+      <div class="hero-dots" aria-label="Surat saýlamak">
+        <button class="hero-dot active" type="button" aria-label="1-nji surat" aria-current="true"></button>
+        <button class="hero-dot" type="button" aria-label="2-nji surat"></button>
+        <button class="hero-dot" type="button" aria-label="3-nji surat"></button>
+        <button class="hero-dot" type="button" aria-label="4-nji surat"></button>
       </div>
     </section>
 
@@ -291,6 +309,7 @@
 
   <script src="js/app.js"></script>
   <script src="js/animation.js"></script>
+  <script src="js/hero-slider.js"></script>
 
 </body>
 </html>
