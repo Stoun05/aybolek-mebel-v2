@@ -744,6 +744,29 @@
     }
 }
 
+.category-placeholder{
+    min-height:420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.office-category{
+    background:linear-gradient(145deg,#243746,#2f9c95);
+}
+
+.school-category{
+    background:linear-gradient(145deg,#5a4632,#d5a84d);
+}
+
+.category-symbol{
+    color:rgba(255,255,255,.16);
+    font-size:52px;
+    font-weight:900;
+    letter-spacing:8px;
+    transform:rotate(-8deg);
+}
+
 .home-benefits{
   background:#fff;
 }
