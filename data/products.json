@@ -25,5 +25,23 @@
     "category": "dining",
     "categoryLabel": "Naharhana mebelleri",
     "badge": "Naharhana mebelleri"
+  },
+  {
+    "id": "office-set",
+    "title": "Ofis mebel toplumy",
+    "description": "Iş otaglary üçin stol, oturgyç we şkaflardan düzülen döwrebap ofis mebel toplumy.",
+    "image": "images/categories/office.webp",
+    "category": "office",
+    "categoryLabel": "Ofis mebelleri",
+    "badge": "Ofis mebelleri"
+  },
+  {
+    "id": "school-set",
+    "title": "Mekdep mebel toplumy",
+    "description": "Synp otaglary üçin parta, oturgyç we mugallym stolundan düzülen mebel toplumy.",
+    "image": "images/categories/school.webp",
+    "category": "school",
+    "categoryLabel": "Mekdep harytlary",
+    "badge": "Mekdep harytlary"
   }
 ]
