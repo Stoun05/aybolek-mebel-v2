@@ -4,9 +4,9 @@
     "title": "Premium Divan Luna",
     "description": "Döwrebap myhman otagy üçin premium divan.",
     "image": "images/products/sofa.png",
-    "category": "living",
-    "categoryLabel": "Myhman otagy",
-    "badge": "Myhman otagy"
+    "category": "soft",
+    "categoryLabel": "Ýumşak mebeller",
+    "badge": "Ýumşak mebeller"
   },
   {
     "id": "bed",
@@ -14,16 +14,16 @@
     "description": "Ýatylýan otag üçin döwrebap toplum.",
     "image": "images/products/bed.png",
     "category": "bedroom",
-    "categoryLabel": "Ýatylýan otag",
-    "badge": "Ýatylýan otag"
+    "categoryLabel": "Ýatylýan otag mebelleri",
+    "badge": "Ýatylýan otag mebelleri"
   },
   {
     "id": "kitchen",
-    "title": "Modern Aşhana",
-    "description": "Premium aşhana mebel toplumy.",
+    "title": "Modern Naharhana toplumy",
+    "description": "Naharhana üçin döwrebap mebel toplumy.",
     "image": "images/products/kitchen 0.2.png",
-    "category": "kitchen",
-    "categoryLabel": "Aşhana",
-    "badge": "Aşhana"
+    "category": "dining",
+    "categoryLabel": "Naharhana mebelleri",
+    "badge": "Naharhana mebelleri"
   }
 ]
