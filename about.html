@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aýbölek mebel fabrigi we dükany barada: taryhy, önümçilik ugurlary, üstünlikleri we habarlaşmak maglumatlary.">
   <title>Aýbölek Mebel | Biz barada</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="preload" as="image" href="images/hero/store-wide.webp" fetchpriority="high">
 </head>
 <body>
   <header class="site-header">
@@ -19,16 +22,139 @@
     </nav>
     <div class="header-actions"><button class="menu-btn" id="menuBtn">☰</button></div>
   </header>
+
   <main>
-    <section class="catalog-hero">
-      <div><span>AÝBÖLEK MEBEL</span><h1>Öýüňize laýyk mebel çözgütleri</h1><p>Döwrebap dizaýny, oňaýlylygy we hili bir ýerde jemleýän mebel katalogy.</p></div>
+    <section class="catalog-hero about-hero">
+      <div class="about-hero-content">
+        <span>AÝBÖLEK MEBEL</span>
+        <h1>Milli önümçilikden döwrebap giňişliklere</h1>
+        <p>2010-njy ýyldan bäri öý, iş, okuw we jemgyýetçilik giňişlikleri üçin dürli görnüşli mebel önümlerini taýýarlaýan kärhana.</p>
+        <a class="btn btn-primary" href="#history">Taryhymyzy oka</a>
+      </div>
     </section>
-    <section class="section-padding" style="max-width:1000px;margin:auto">
-      <div class="section-title"><span>BIZ BARADA</span><h2>Her otag üçin aýratyn çemeleşme</h2><p>Aýbölek Mebel öý, ofis we beýleki giňişlikler üçin mebel görnüşlerini tanyşdyrýar. Katalogymyzda önümleriň suratlaryny, ölçeglerini, materiallaryny we beýleki aýratynlyklaryny görüp bilersiňiz.</p></div>
-      <div class="hero-buttons" style="justify-content:center"><a class="btn btn-primary" href="katalog.html">Kataloga geç</a><a class="btn btn-outline" href="contact.html">Habarlaşmak</a></div>
+
+    <section class="about-intro" id="history">
+      <div class="about-intro-image">
+        <img src="images/hero/store-entrance.webp" alt="Aýbölek mebel dükanynyň esasy girelgesi" loading="lazy">
+        <div class="about-year"><strong>2010</strong><span>Açylan ýyly</span></div>
+      </div>
+      <div class="about-intro-copy">
+        <span class="about-eyebrow">BIZIŇ TARYHYMYZ</span>
+        <h2>Aýbölek mebel fabrigi</h2>
+        <p>«Aýbölek» mebel fabrigi 2010-njy ýylyň 29-njy iýulynda dabaraly ýagdaýda açyldy. Şondan bäri kärhana dürli maksatly mebelleri öndürip, müşderilere hyzmat edip gelýär.</p>
+        <p>Önümçilik diňe öý mebelleri bilen çäklenmeýär. Kärhana ofis, aşhana, bilim, saglygy goraýyş we ýatakhanalar üçin hem mebel önümlerini taýýarlaýar. Aşgabatdaky adybir dükan fabrigiň önümlerini müşderilere hödürleýär.</p>
+        <a class="about-text-link" href="https://ashgabat.in/2021/05/25/aybolek-aya-gune-tay-bolek/" target="_blank" rel="noopener noreferrer">Maglumatyň çeşmesini gör <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="about-milestones" aria-labelledby="milestone-title">
+      <div class="about-section-heading">
+        <span class="about-eyebrow">ÖSÜŞ ÝOLY</span>
+        <h2 id="milestone-title">Möhüm pursatlar</h2>
+        <p>Açyk çeşmelerde görkezilen esasy wakalar.</p>
+      </div>
+      <div class="milestone-grid">
+        <article class="milestone-card">
+          <span class="milestone-year">2010</span>
+          <h3>Fabrigiň açylyşy</h3>
+          <p>Aýbölek mebel fabrigi 29-njy iýulda işe başlady.</p>
+        </article>
+        <article class="milestone-card featured">
+          <span class="milestone-year">2014</span>
+          <h3>Halkara ykrar</h3>
+          <p>Kärhana Las-Wegasda geçirilen halkara sergide baýrak aldy.</p>
+        </article>
+        <article class="milestone-card">
+          <span class="milestone-year">2023</span>
+          <h3>Eksport ädimi</h3>
+          <p>Gazagystandaky Al-Farabi uniwersitetiniň 400 orunlyk binasy üçin okuw partalary eksport edildi.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-directions" aria-labelledby="directions-title">
+      <div class="about-section-heading">
+        <span class="about-eyebrow">ÖNÜMÇILIK UGURLARY</span>
+        <h2 id="directions-title">Dürli giňişlikler üçin çözgütler</h2>
+        <p>Kärhananyň açyk çeşmelerde görkezilen esasy önüm ugurlary.</p>
+      </div>
+      <div class="direction-grid">
+        <article><span>01</span><h3>Öý mebelleri</h3><p>Myhman we ýatylýan otaglar üçin mebel görnüşleri.</p></article>
+        <article><span>02</span><h3>Ofis mebelleri</h3><p>Iş otaglary üçin stol, oturgyç, şkaf we ýumşak mebeller.</p></article>
+        <article><span>03</span><h3>Aşhana mebelleri</h3><p>Aşhana we naharhana giňişlikleri üçin mebel çözgütleri.</p></article>
+        <article><span>04</span><h3>Bilim mebelleri</h3><p>Çagalar baglary, mekdepler we ýokary okuw mekdepleri üçin parta, oturgyç we şkaflar.</p></article>
+        <article><span>05</span><h3>Saglygy goraýyş</h3><p>Saglygy goraýyş edaralary üçin niýetlenen mebel önümleri.</p></article>
+        <article><span>06</span><h3>Ýatakhanalar</h3><p>Ýatakhanalar we beýleki ýörite maksatly ýerler üçin mebel görnüşleri.</p></article>
+      </div>
+    </section>
+
+    <section class="about-export">
+      <div class="about-export-copy">
+        <span class="about-eyebrow">ÝURT DAŞARYNA ÇYKARYLÝAN ÖNÜMLER</span>
+        <h2>Türkmenistanda öndürilen okuw mebelleri</h2>
+        <p>2023-nji ýylda Aýbölek mebel kärhanasy Gazagystanyň Astana şäherindäki Al-Farabi adyndaky Gazak milli uniwersitetiniň täze 400 orunlyk binasy üçin okuw partalaryny eksport etdi.</p>
+        <p>Şol döwürde kärhana Lebap welaýatynyň Kerki etrabyndaky 160 orunlyk çagalar bagyny hem mebel önümleri bilen doly üpjün etdi.</p>
+        <a class="about-text-link light" href="https://business.com.tm/tm/post/10709/aybolek-mebel-karhanasy-gazagystana-okuw-partalaryny-eksport-etdi" target="_blank" rel="noopener noreferrer">Habary doly oka <span>↗</span></a>
+      </div>
+      <img src="images/categories/school.webp" alt="Mekdep üçin mebel toplumy" loading="lazy">
+    </section>
+
+    <section class="about-contact" aria-labelledby="contact-title">
+      <div class="about-contact-heading">
+        <span class="about-eyebrow">DÜKANYMYZ</span>
+        <h2 id="contact-title">Aýbölek bilen habarlaşyň</h2>
+        <p>Önümler we eltip bermek hyzmaty barada anyk maglumat almak üçin dükan bilen habarlaşyň.</p>
+      </div>
+      <div class="about-contact-grid">
+        <article>
+          <span class="contact-label">SALGY</span>
+          <h3>Parahat 4, Andalyp köçesi, 80/B</h3>
+          <p>Öňki «Santa Barbara», Aşgabat</p>
+        </article>
+        <article>
+          <span class="contact-label">TELEFONLAR</span>
+          <div class="phone-list">
+            <a href="tel:+99312470103">+993 12 47-01-03</a>
+            <a href="tel:+99312470104">+993 12 47-01-04</a>
+            <a href="tel:+99312470105">+993 12 47-01-05</a>
+            <a href="tel:+99312470106">+993 12 47-01-06</a>
+          </div>
+        </article>
+        <article>
+          <span class="contact-label">IŞ WAGTY</span>
+          <h3>Duşenbe–Anna: 09:00–19:00</h3>
+          <p>Şenbe–Ýekşenbe: 09:00–18:00</p>
+        </article>
+        <article>
+          <span class="contact-label">INSTAGRAM</span>
+          <h3><a href="https://www.instagram.com/aybolek_mebel_officiall/" target="_blank" rel="noopener noreferrer">@aybolek_mebel_officiall</a></h3>
+          <p>Habarlar we önüm täzelikleri</p>
+        </article>
+      </div>
+      <p class="about-contact-note">Bellik: telefonlar we iş wagty açyk işewürlik katalogyndaky maglumatlara esaslanýar. Gitmezden öň jaň edip tassyklamak maslahat berilýär.</p>
+    </section>
+
+    <section class="about-sources" aria-labelledby="sources-title">
+      <div>
+        <span class="about-eyebrow">MAGLUMAT ÇEŞMELERI</span>
+        <h2 id="sources-title">Açyk we barlanylan maglumatlar</h2>
+        <p>Bu sahypadaky taryhy we işewürlik maglumatlary aşakdaky neşirleriň açyk maglumatlaryna esaslanýar.</p>
+      </div>
+      <div class="source-list">
+        <a href="https://ashgabat.in/2021/05/25/aybolek-aya-gune-tay-bolek/" target="_blank" rel="noopener noreferrer"><span>01</span><div><strong>InAshgabat</strong><small>Fabrigiň taryhy we önümçilik ugurlary, 2021</small></div><b>↗</b></a>
+        <a href="https://turkmenistan.gov.tm/index.php/en/post/4429/international-exposition-of-furniture-and-household-supplies-closes-in-ashgabat" target="_blank" rel="noopener noreferrer"><span>02</span><div><strong>Türkmenistan: Altyn asyr</strong><small>Halkara sergi we baýrak baradaky maglumat, 2015</small></div><b>↗</b></a>
+        <a href="https://business.com.tm/tm/post/10709/aybolek-mebel-karhanasy-gazagystana-okuw-partalaryny-eksport-etdi" target="_blank" rel="noopener noreferrer"><span>03</span><div><strong>Biznes Türkmenistan</strong><small>Gazagystana eksport baradaky habar, 2023</small></div><b>↗</b></a>
+        <a href="https://yakyn.biz/b/aybolek-mebel-dukany-97" target="_blank" rel="noopener noreferrer"><span>04</span><div><strong>Ýakyn</strong><small>Salgy, telefonlar we iş wagty</small></div><b>↗</b></a>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <div><span>AÝBÖLEK MEBEL</span><h2>Öýüňiz ýa-da iş ýeriňiz üçin görnüşleri saýlaň</h2></div>
+      <div class="about-cta-actions"><a class="btn btn-primary" href="katalog.html">Katalogy aç</a><a class="btn about-btn-light" href="contact.html">Habarlaşmak</a></div>
     </section>
   </main>
-  <footer class="footer"><h2>AÝBÖLEK</h2><p>Premium furniture & decoration</p><p>© 2026 Aýbölek Mebel. Ähli hukuklar goralan.</p></footer>
+
+  <footer class="footer"><h2>AÝBÖLEK</h2><p>Furniture &amp; decoration</p><p>© 2026 Aýbölek Mebel. Ähli hukuklar goralan.</p></footer>
   <script src="js/app.js"></script>
 </body>
 </html>
