@@ -9,6 +9,7 @@ const messageResult = document.getElementById("messageResult");
 const messagePreview = document.getElementById("messagePreview");
 const copyStatus = document.getElementById("copyStatus");
 const copyMessage = document.getElementById("copyMessage");
+const shareMessage = document.getElementById("shareMessage");
 let activeProductName = requestedProduct;
 
 function showSelectedProduct(product) {
@@ -25,6 +26,11 @@ function showSelectedProduct(product) {
   if (product?.categoryLabel) {
     const category = document.getElementById("customerCategory");
     if (category) category.value = product.categoryLabel;
+  }
+
+  const message = document.getElementById("customerMessage");
+  if (message && !message.value.trim()) {
+    message.value = "Şu önümiň bahasy, ölçegleri, reňk görnüşleri we häzirki elýeterliligi barada maglumat almak isleýärin.";
   }
 }
 
@@ -90,6 +96,28 @@ async function displayAndCopyMessage() {
   messageResult.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+async function sharePreparedMessage() {
+  if (!inquiryForm?.reportValidity()) return;
+  const text = buildMessage();
+  messagePreview.textContent = text;
+  messageResult.hidden = false;
+
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: "Aýbölek Mebel — önüm soragy", text });
+      copyStatus.textContent = "Paýlaşma menýusy açyldy ✓";
+      return;
+    } catch (error) {
+      if (error.name === "AbortError") return;
+    }
+  }
+
+  const copied = await copyText(text);
+  copyStatus.textContent = copied
+    ? "Paýlaşma ýok — tekst göçürildi ✓"
+    : "Teksti belläp göçüriň";
+}
+
 inquiryForm?.addEventListener("submit", event => {
   event.preventDefault();
   if (!inquiryForm.reportValidity()) return;
@@ -97,3 +125,4 @@ inquiryForm?.addEventListener("submit", event => {
 });
 
 copyMessage?.addEventListener("click", displayAndCopyMessage);
+shareMessage?.addEventListener("click", sharePreparedMessage);
