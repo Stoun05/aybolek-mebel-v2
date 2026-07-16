@@ -54,13 +54,13 @@
   max-width:1240px;
   margin:0 auto 36px;
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-columns:repeat(5,minmax(0,1fr));
   gap:18px;
 }
 
 .contact-action-card{
   min-width:0;
-  padding:28px;
+  padding:24px 20px;
   display:grid;
   grid-template-columns:42px minmax(0,1fr) 26px;
   gap:14px;
