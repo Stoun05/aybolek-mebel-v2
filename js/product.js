@@ -45,6 +45,9 @@ function renderProduct(product, products) {
   document.querySelector(".product-badge").textContent = product.badge || "Aýbölek";
   document.getElementById("productCategory").textContent = product.categoryLabel;
   document.getElementById("featureCategory").textContent = product.categoryLabel;
+  document.getElementById("featureMaterial").textContent = product.material || "Takyk maglumat üçin habarlaşyň";
+  document.getElementById("featureDimensions").textContent = product.dimensions || "Takyk maglumat üçin habarlaşyň";
+  document.getElementById("featureColors").textContent = product.colors || "Takyk maglumat üçin habarlaşyň";
   document.getElementById("info").querySelector("p").textContent = product.description;
   document.getElementById("productContactLink").href = `contact.html?product=${encodeURIComponent(product.title)}`;
   document.getElementById("relatedGrid").innerHTML = products
