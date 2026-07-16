@@ -50,6 +50,11 @@ function renderProduct(product, products) {
   document.getElementById("featureColors").textContent = product.colors || "Takyk maglumat üçin habarlaşyň";
   document.getElementById("info").querySelector("p").textContent = product.description;
   document.getElementById("productContactLink").href = `contact.html?product=${encodeURIComponent(product.title)}`;
+  const backToCatalog = document.getElementById("backToCatalog");
+  if (backToCatalog) {
+    backToCatalog.href = `katalog.html?category=${encodeURIComponent(product.category)}`;
+    backToCatalog.textContent = `← ${product.categoryLabel} bölümine dolan`;
+  }
   document.getElementById("relatedGrid").innerHTML = products
     .filter(item => item.id !== product.id && item.category === product.category)
     .slice(0, 3)

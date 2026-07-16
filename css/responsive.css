@@ -322,8 +322,13 @@
   }
 
   .product-actions-detail,
-  .detail-cart{
+  .detail-cart,
+  .detail-call{
     width:100%;
+  }
+
+  .product-actions-detail{
+    flex-direction:column;
   }
 
   .product-features div{
