@@ -52,12 +52,12 @@
 
     <section class="catalog-page">
 
-      <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false">☰ Filterleri aç</button>
+      <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterPanel">☰ Filterleri aç</button>
 
       <aside class="filter-panel" id="filterPanel">
         <div class="filter-heading">
-          <h3>Filter</h3>
-          <button id="clearFilters" type="button">Arassala</button>
+          <h3>Filtrler <span id="activeFilterCount" hidden>0</span></h3>
+          <button id="clearFilters" type="button">Ählisini arassala</button>
         </div>
 
         <div class="filter-group">
@@ -89,19 +89,54 @@
           </label>
         </div>
 
+        <div class="filter-group">
+          <h4>Material</h4>
+
+          <label>
+            <input type="checkbox" value="fabric" data-filter="material">
+            Mata we ýumşak örtük
+          </label>
+
+          <label>
+            <input type="checkbox" value="wood" data-filter="material">
+            Agaç we mebel paneli
+          </label>
+
+          <label>
+            <input type="checkbox" value="metal" data-filter="material">
+            Metal gurluş
+          </label>
+
+          <label>
+            <input type="checkbox" value="glass" data-filter="material">
+            Aýna görnüşi
+          </label>
+        </div>
+
       </aside>
 
       <div class="catalog-content">
 
         <div class="catalog-toolbar">
-          <input type="text" id="catalogSearch" placeholder="Mebel gözle..." />
+          <label class="catalog-search">
+            <span class="sr-only">Önüm gözle</span>
+            <input type="search" id="catalogSearch" placeholder="Önümiň adyny ýa-da görnüşini gözle..." autocomplete="off" />
+          </label>
+          <select id="catalogSort" aria-label="Önümleri tertiple">
+            <option value="default">Adaty tertip</option>
+            <option value="title-asc">Ady boýunça A–Z</option>
+            <option value="title-desc">Ady boýunça Z–A</option>
+            <option value="category">Kategoriýa boýunça</option>
+          </select>
           <span id="catalogCount" aria-live="polite">0 önüm</span>
         </div>
 
         <div class="catalog-grid" id="catalogGrid" aria-live="polite"></div>
-        <p id="catalogEmpty" hidden style="padding:40px 0;text-align:center">
-          Bu kategoriýada entek önüm ýerleşdirilmedi.
-        </p>
+        <div class="no-products" id="catalogEmpty" hidden>
+          <h3>Önüm tapylmady</h3>
+          <p>Gözleg sözüni üýtgediň ýa-da filtrleri arassalaň.</p>
+          <button id="emptyClearFilters" type="button">Filtrleri arassala</button>
+        </div>
 
       </div>
 
