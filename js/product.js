@@ -70,11 +70,20 @@ function renderProduct(product, products) {
   document.getElementById("ogImage")?.setAttribute("content", absoluteImage);
 }
 
-mainImage?.addEventListener("click", () => {
+function openGallery() {
   if (!galleryModal || !galleryImg) return;
   galleryImg.src = mainImage.src;
   galleryImg.alt = mainImage.alt;
   galleryModal.classList.add("show");
+  galleryClose?.focus();
+}
+
+mainImage?.addEventListener("click", openGallery);
+mainImage?.parentElement?.addEventListener("keydown", event => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    openGallery();
+  }
 });
 
 galleryClose?.addEventListener("click", () => galleryModal?.classList.remove("show"));

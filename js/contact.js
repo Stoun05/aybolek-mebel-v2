@@ -19,7 +19,7 @@ function showSelectedProduct(product) {
   activeProductName = product?.title || activeProductName;
 
   if (selectedProductImage) {
-    selectedProductImage.src = product?.image || "images/logo.png";
+    selectedProductImage.src = product?.image || "images/logo.webp";
     selectedProductImage.alt = product?.title || "Saýlanan önüm";
   }
 

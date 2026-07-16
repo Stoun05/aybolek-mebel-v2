@@ -105,17 +105,28 @@ const lightboxImg = document.getElementById("lightboxImg");
 const lightboxClose = document.getElementById("lightboxClose");
 
 productImages.forEach(img => {
+    img.tabIndex = 0;
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", `${img.alt} — ulalt`);
     img.addEventListener("click", () => {
         lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
         imageLightbox.classList.add("show");
+        lightboxClose?.focus();
+    });
+    img.addEventListener("keydown", event => {
+        if(event.key === "Enter" || event.key === " "){
+            event.preventDefault();
+            img.click();
+        }
     });
 });
 
-lightboxClose.addEventListener("click", () => {
+lightboxClose?.addEventListener("click", () => {
     imageLightbox.classList.remove("show");
 });
 
-imageLightbox.addEventListener("click", (e) => {
+imageLightbox?.addEventListener("click", (e) => {
     if(e.target === imageLightbox){
         imageLightbox.classList.remove("show");
     }
