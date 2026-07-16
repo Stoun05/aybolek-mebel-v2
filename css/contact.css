@@ -460,6 +460,110 @@
   color:white;
 }
 
+.location-section{
+  max-width:1240px;
+  min-height:520px;
+  margin:36px auto 0;
+  display:grid;
+  grid-template-columns:minmax(340px,.78fr) minmax(0,1.22fr);
+  overflow:hidden;
+  border-radius:32px;
+  background:white;
+  box-shadow:0 28px 75px rgba(18,58,55,.12);
+}
+
+.location-details{
+  padding:54px 46px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.location-details h2{
+  color:#183c3a;
+  font-size:38px;
+  line-height:1.18;
+}
+
+.location-address{
+  margin-top:22px;
+  color:#60706d;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.location-code{
+  margin-top:26px;
+  padding:17px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  border:1px solid #d4e6e3;
+  border-radius:16px;
+  background:#f3f9f8;
+}
+
+.location-code span{
+  color:#72817e;
+  font-size:13px;
+  font-weight:700;
+}
+
+.location-code strong{
+  color:#247f79;
+  font-size:20px;
+  letter-spacing:1px;
+}
+
+.location-buttons{
+  margin-top:28px;
+  display:grid;
+  gap:11px;
+}
+
+.location-buttons a{
+  min-height:54px;
+  padding:14px 19px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:14px;
+  font-weight:900;
+  text-decoration:none;
+  transition:transform .25s ease,background .25s ease;
+}
+
+.location-buttons a:hover{
+  transform:translateY(-2px);
+}
+
+.location-primary{
+  background:#2f9c95;
+  color:white;
+}
+
+.location-primary:hover{
+  background:#247f79;
+}
+
+.location-secondary{
+  border:1px solid #cbdedb;
+  color:#247f79;
+}
+
+.location-map{
+  min-height:520px;
+  background:#dfe9e8;
+}
+
+.location-map iframe{
+  width:100%;
+  height:100%;
+  min-height:520px;
+  display:block;
+}
+
 @media (max-width:1000px){
   .contact-actions{
     grid-template-columns:1fr;
@@ -469,9 +573,22 @@
     grid-template-columns:1fr;
   }
 
+  .location-section{
+    grid-template-columns:1fr;
+  }
+
   .contact-information,
   .inquiry-panel{
     padding:48px;
+  }
+
+  .location-details{
+    padding:48px;
+  }
+
+  .location-map,
+  .location-map iframe{
+    min-height:430px;
   }
 }
 
@@ -506,6 +623,33 @@
   .contact-information,
   .inquiry-panel{
     padding:36px 22px;
+  }
+
+  .location-section{
+    min-height:0;
+    border-radius:24px;
+  }
+
+  .location-details{
+    padding:36px 22px;
+  }
+
+  .location-details h2{
+    font-size:29px;
+  }
+
+  .location-address{
+    font-size:16px;
+  }
+
+  .location-code{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .location-map,
+  .location-map iframe{
+    min-height:360px;
   }
 
   .contact-phone-list,
