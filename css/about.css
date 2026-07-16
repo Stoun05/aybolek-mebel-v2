@@ -310,6 +310,7 @@
 .about-contact-grid h3 a{
   color:#183c3a;
   text-decoration:none;
+  overflow-wrap:anywhere;
 }
 
 .phone-list a:hover,
@@ -358,6 +359,7 @@
 
 .source-list strong,
 .source-list small{
+  overflow-wrap:anywhere;
   display:block;
 }
 

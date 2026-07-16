@@ -95,7 +95,8 @@
   }
 
   .icon-btn{
-    display:none;
+    display:flex;
+    flex:0 0 44px;
   }
 
   .catalog-page{
@@ -260,6 +261,20 @@
     height:270px;
   }
 
+  .product-info h3,
+  .catalog-info h3,
+  .product-details h1{
+    overflow-wrap:anywhere;
+  }
+
+  .home-product-actions a,
+  .catalog-bottom a{
+    min-height:46px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
   .catalog-hero{
     min-height:46vh;
     padding:130px 5% 60px;
@@ -368,6 +383,22 @@
 
   .main-product-image img{
     height:330px;
+  }
+}
+
+@media (hover:none){
+  .category-card:hover,
+  .product-card:hover,
+  .catalog-card:hover,
+  .related-card:hover{
+    transform:none;
+  }
+
+  .main-product-image:hover img,
+  .product-card:hover img,
+  .catalog-card:hover img,
+  .related-card:hover img{
+    transform:none;
   }
 }
 
