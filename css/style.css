@@ -714,3 +714,46 @@ html{
     font-size:18px;
     margin:8px 0;
 }
+
+.back-top{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:900;
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border:0;
+  border-radius:50%;
+  background:#2f9c95;
+  color:white;
+  font-size:22px;
+  font-weight:900;
+  box-shadow:0 14px 36px rgba(18,58,55,.28);
+  cursor:pointer;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(14px);
+  transition:opacity .25s ease,transform .25s ease,visibility .25s ease,background .25s ease;
+}
+
+.back-top.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+.back-top:hover{
+  background:#247d77;
+  transform:translateY(-3px);
+}
+
+@media (max-width:680px){
+  .back-top{
+    right:16px;
+    bottom:16px;
+    width:44px;
+    height:44px;
+  }
+}
