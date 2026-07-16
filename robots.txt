@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stoun05.github.io/aybolek-mebel-v2/sitemap.xml

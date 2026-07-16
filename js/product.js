@@ -63,6 +63,11 @@ function renderProduct(product, products) {
   setMainImage(product.image, product.title);
   renderThumbs(product);
   document.title = `Aýbölek Mebel | ${product.title}`;
+  const absoluteImage = new URL(product.image, window.location.href).href;
+  document.getElementById("metaDescription")?.setAttribute("content", product.description);
+  document.getElementById("ogTitle")?.setAttribute("content", `Aýbölek Mebel | ${product.title}`);
+  document.getElementById("ogDescription")?.setAttribute("content", product.description);
+  document.getElementById("ogImage")?.setAttribute("content", absoluteImage);
 }
 
 mainImage?.addEventListener("click", () => {
