@@ -22,8 +22,10 @@ function productCard(product) {
         <span>${escapeHtml(product.badge || "Aýbölek")}</span>
         <h3>${escapeHtml(product.title)}</h3>
         <p>${escapeHtml(product.description)}</p>
+        <small class="catalog-photo-note">${escapeHtml(product.photoNote || "Önüm suraty")}</small>
         <div class="catalog-bottom">
           <a class="catalog-btn" href="product.html?product=${encodeURIComponent(product.id)}">Giňişleýin</a>
+          <a class="catalog-contact" href="contact.html?product=${encodeURIComponent(product.title)}">Bahasyny soraň</a>
         </div>
       </div>
     </article>`;

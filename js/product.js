@@ -3,7 +3,7 @@ const thumbs = document.querySelector(".thumbs");
 const galleryModal = document.getElementById("galleryModal");
 const galleryImg = document.getElementById("galleryImg");
 const galleryClose = document.getElementById("galleryClose");
-const productId = new URLSearchParams(window.location.search).get("product") || "sofa";
+const productId = new URLSearchParams(window.location.search).get("product") || "soft-collection";
 
 function setMainImage(image, title) {
   if (!mainImage) return;
@@ -41,13 +41,14 @@ function relatedCard(product) {
 function renderProduct(product, products) {
   document.querySelector(".product-details h1").textContent = product.title;
   document.querySelector(".product-description").textContent = product.description;
+  document.getElementById("productPhotoNote").textContent = product.photoNote || "Önüm suraty";
   document.querySelector(".product-badge").textContent = product.badge || "Aýbölek";
   document.getElementById("productCategory").textContent = product.categoryLabel;
   document.getElementById("featureCategory").textContent = product.categoryLabel;
   document.getElementById("info").querySelector("p").textContent = product.description;
   document.getElementById("productContactLink").href = `contact.html?product=${encodeURIComponent(product.title)}`;
   document.getElementById("relatedGrid").innerHTML = products
-    .filter(item => item.id !== product.id)
+    .filter(item => item.id !== product.id && item.category === product.category)
     .slice(0, 3)
     .map(relatedCard)
     .join("");

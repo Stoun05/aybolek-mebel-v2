@@ -1,47 +1,205 @@
 [
   {
-    "id": "sofa",
-    "title": "Premium Divan Luna",
-    "description": "Döwrebap myhman otagy üçin premium divan.",
-    "image": "images/products/sofa.png",
+    "id": "soft-collection",
+    "title": "Ýumşak mebel kolleksiýasy",
+    "description": "Myhman otagy üçin dürli ölçegdäki divanlar, kreslolar we toplumlar.",
+    "image": "images/showroom/soft-furniture-showroom.webp",
+    "gallery": ["images/showroom/soft-furniture-showroom.webp", "images/showroom/modern-sofa-set.webp", "images/showroom/mirrors-and-sofas.webp"],
     "category": "soft",
     "categoryLabel": "Ýumşak mebeller",
-    "badge": "Ýumşak mebeller"
+    "badge": "Dükandaky kolleksiýa",
+    "photoNote": "Hakyky Aýbölek dükanynyň suraty"
   },
   {
-    "id": "bed",
-    "title": "Premium Ýatak",
-    "description": "Ýatylýan otag üçin döwrebap toplum.",
-    "image": "images/products/bed.png",
-    "category": "bedroom",
-    "categoryLabel": "Ýatylýan otag mebelleri",
-    "badge": "Ýatylýan otag mebelleri"
+    "id": "corner-sofa",
+    "title": "Burç diwany",
+    "description": "Myhman otagynyň giňişligini amatly ulanmak üçin döwrebap burç diwany.",
+    "image": "images/showroom/modern-sofa-set.webp",
+    "gallery": ["images/showroom/modern-sofa-set.webp", "images/showroom/soft-furniture-showroom.webp"],
+    "category": "soft",
+    "categoryLabel": "Ýumşak mebeller",
+    "badge": "Myhman otagy",
+    "photoNote": "Hakyky Aýbölek dükanynyň suraty"
   },
   {
-    "id": "kitchen",
-    "title": "Modern Naharhana toplumy",
-    "description": "Naharhana üçin döwrebap mebel toplumy.",
-    "image": "images/products/kitchen 0.2.png",
-    "category": "dining",
-    "categoryLabel": "Naharhana mebelleri",
-    "badge": "Naharhana mebelleri"
+    "id": "sofa-armchair-set",
+    "title": "Divan we kreslo toplumy",
+    "description": "Birmeňzeş dizaýnda taýýarlanan divan we kreslo görnüşleri.",
+    "image": "images/showroom/mirrors-and-sofas.webp",
+    "gallery": ["images/showroom/mirrors-and-sofas.webp", "images/showroom/soft-furniture-showroom.webp"],
+    "category": "soft",
+    "categoryLabel": "Ýumşak mebeller",
+    "badge": "Toplum",
+    "photoNote": "Hakyky Aýbölek dükanynyň suraty"
   },
   {
-    "id": "office-set",
-    "title": "Ofis mebel toplumy",
-    "description": "Iş otaglary üçin stol, oturgyç we şkaflardan düzülen döwrebap ofis mebel toplumy.",
+    "id": "veranda-furniture",
+    "title": "Eýwan mebelleri",
+    "description": "Eýwan we dynç alyş giňişlikleri üçin amatly mebel görnüşleri.",
+    "image": "images/categories/living.png",
+    "category": "soft",
+    "categoryLabel": "Ýumşak mebeller",
+    "badge": "Eýwan üçin",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "office-desk",
+    "title": "Ofis stoly",
+    "description": "Iş otagy we edara üçin dürli ölçegdäki funksional ofis stollary.",
     "image": "images/categories/office.webp",
     "category": "office",
     "categoryLabel": "Ofis mebelleri",
-    "badge": "Ofis mebelleri"
+    "badge": "Iş otagy",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
   },
   {
-    "id": "school-set",
-    "title": "Mekdep mebel toplumy",
-    "description": "Synp otaglary üçin parta, oturgyç we mugallym stolundan düzülen mebel toplumy.",
+    "id": "computer-desk",
+    "title": "Kompýuter stoly",
+    "description": "Kompýuter, okuw we gündelik işler üçin amatly stol görnüşleri.",
+    "image": "images/categories/office.webp",
+    "category": "office",
+    "categoryLabel": "Ofis mebelleri",
+    "badge": "Kompýuter üçin",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "office-cabinet",
+    "title": "Ofis şkafy we tekjeler",
+    "description": "Resminamalary, kitaplary we iş serişdelerini tertipli saklamak üçin.",
+    "image": "images/categories/office.webp",
+    "category": "office",
+    "categoryLabel": "Ofis mebelleri",
+    "badge": "Saklaýyş",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "office-soft-furniture",
+    "title": "Ofis üçin ýumşak mebel",
+    "description": "Kabulhana, garaşylýan ýer we ýolbaşçy otagy üçin ýumşak mebeller.",
+    "image": "images/showroom/modern-sofa-set.webp",
+    "category": "office",
+    "categoryLabel": "Ofis mebelleri",
+    "badge": "Kabulhana",
+    "photoNote": "Hakyky Aýbölek dükanynyň suraty"
+  },
+  {
+    "id": "bedroom-set",
+    "title": "Ýatylýan otag toplumy",
+    "description": "Krowat, şkaf we goşmaça böleklerden düzülýän ýatylýan otag toplumy.",
+    "image": "images/products/bed.png",
+    "category": "bedroom",
+    "categoryLabel": "Ýatylýan otag mebelleri",
+    "badge": "Otag toplumy",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "bed-wardrobe-set",
+    "title": "Krowat we şkaf toplumy",
+    "description": "Ýatylýan otagy bir bitewi dizaýnda enjamlaşdyrmak üçin toplum.",
+    "image": "images/categories/bedroom.png",
+    "category": "bedroom",
+    "categoryLabel": "Ýatylýan otag mebelleri",
+    "badge": "Ýatylýan otag",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "children-bed",
+    "title": "Sargyt boýunça çaga düşegi",
+    "description": "Çaganyň otagyna laýyk ölçeg, bezeg we görnüş boýunça taýýarlanylýan düşekler.",
+    "image": "images/showroom/children-beds.webp",
+    "category": "bedroom",
+    "categoryLabel": "Ýatylýan otag mebelleri",
+    "badge": "Çaga mebeli",
+    "photoNote": "Hakyky Aýbölek önüm suraty"
+  },
+  {
+    "id": "transformer-child-bed",
+    "title": "Transformer çaga düşegi",
+    "description": "Çekme, tekje ýa-da oturgyç bölekleri bilen birleşdirilip taýýarlanyp bilinýän görnüş.",
+    "image": "images/showroom/children-beds.webp",
+    "category": "bedroom",
+    "categoryLabel": "Ýatylýan otag mebelleri",
+    "badge": "Sargyt boýunça",
+    "photoNote": "Hakyky Aýbölek önüm suraty"
+  },
+  {
+    "id": "dining-set",
+    "title": "Naharhana mebel toplumy",
+    "description": "Maşgala naharhanasy üçin stol, oturgyç we goşmaça mebel görnüşleri.",
+    "image": "images/products/kitchen 0.2.png",
+    "category": "dining",
+    "categoryLabel": "Naharhana mebelleri",
+    "badge": "Naharhana",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "kitchen-set",
+    "title": "Aşhana mebel toplumy",
+    "description": "Otagyň ölçegine laýyk taýýarlanyp bilinýän aşhana şkaflary we iş bölekleri.",
+    "image": "images/categories/kitchen.png",
+    "category": "dining",
+    "categoryLabel": "Naharhana mebelleri",
+    "badge": "Aşhana",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "dining-table-chairs",
+    "title": "Naharhana stoly we oturgyçlar",
+    "description": "Gündelik naharlanmak we myhman kabul etmek üçin stol-oturgyç toplumlary.",
+    "image": "images/products/kitchen 0.2.png",
+    "category": "dining",
+    "categoryLabel": "Naharhana mebelleri",
+    "badge": "Stol we oturgyç",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "dining-buffet",
+    "title": "Bufet we gap-gaç şkafy",
+    "description": "Gap-gaçlary we naharhana esbaplaryny saklamak üçin şkaf we tekjeler.",
+    "image": "images/categories/kitchen.png",
+    "category": "dining",
+    "categoryLabel": "Naharhana mebelleri",
+    "badge": "Saklaýyş",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "school-desk-chair",
+    "title": "Mekdep partasy we oturgyjy",
+    "description": "Synp otaglary üçin okuwçylara niýetlenen parta we oturgyç görnüşleri.",
     "image": "images/categories/school.webp",
     "category": "school",
     "categoryLabel": "Mekdep harytlary",
-    "badge": "Mekdep harytlary"
+    "badge": "Synp otagy",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "teacher-desk",
+    "title": "Mugallym stoly",
+    "description": "Synp otagynda mugallym üçin niýetlenen amatly we funksional stol.",
+    "image": "images/categories/school.webp",
+    "category": "school",
+    "categoryLabel": "Mekdep harytlary",
+    "badge": "Mugallym üçin",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "classroom-board",
+    "title": "Synp otagy üçin tagta",
+    "description": "Okuw mekdepleri üçin dürli ölçegde taýýarlanyp bilinýän synp tagtalary.",
+    "image": "images/categories/school.webp",
+    "category": "school",
+    "categoryLabel": "Mekdep harytlary",
+    "badge": "Okuw esbaby",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
+  },
+  {
+    "id": "school-bookcase",
+    "title": "Kitap şkafy we tekjeler",
+    "description": "Mekdep, kitaphana we okuw otaglary üçin kitap saklaýyş mebelleri.",
+    "image": "images/categories/school.webp",
+    "category": "school",
+    "categoryLabel": "Mekdep harytlary",
+    "badge": "Kitaphana",
+    "photoNote": "Kategoriýa boýunça görkezme suraty"
   }
 ]

@@ -95,7 +95,14 @@
   font-size:18px;
   color:#666;
   line-height:1.8;
+  margin-bottom:12px;
+}
+
+.product-photo-note{
   margin-bottom:28px;
+  color:#8a9593;
+  font-size:13px;
+  line-height:1.6;
 }
 
 .product-price{
